@@ -1,7 +1,13 @@
+numero_inicial: int = int(input('Introduce un número: '))
+numero_final: int = int(input('Inroduce otro número: '))
+numeros_impares: [int] = []
 
-numeroInicial = int(input("Ingrese un numero: "))
-numeroFinal = int(input("Ingrese un numero mayor que el anterior: "))
+while numero_final <= numero_inicial:
+    numero_final: int = int(input('El segundo número debe ser mayor que el primero. Inroduce otro número: '))
 
+for i in range(numero_inicial, numero_final+1):
+    if(i % 2 != 0):
+        numeros_impares.append(i)
 
-for i in range(numeroInicial + 1, numeroFinal):
-    print(i)
+print(f"Lista de Números impares entre {numero_inicial} y {numero_final}:")
+print(numeros_impares)
