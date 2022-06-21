@@ -1,5 +1,6 @@
 
 numbers = range(1,101)
 
-print(list(reversed(numbers)))
+for i in reversed(numbers):
+    print(f"- {i}")
 
